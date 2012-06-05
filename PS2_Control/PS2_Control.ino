@@ -10,7 +10,15 @@
 
 //#define DEBUG
 
+//Non group move servos
+#define Servo_Pan_pin 13
+
+Servo Pan;
+
+
 //Servo Pin numbers
+//Only servos that will be part
+//of a group move are defined here
 const byte Pins[NUMSERVOS] = {
   12,   //Left Hip pin
   11,   //Left Knee pin
@@ -50,6 +58,8 @@ void setup()
     Servos[i].Offset = (char)EEPROM.read(i);
     Servos[i].servo.writeMicroseconds(1500 + Servos[i].Offset);
   }
+  Pan.attach(Servo_Pan_pin);
+  
   
   pinMode(7, INPUT);
   pinMode(8, INPUT);
@@ -110,6 +120,7 @@ void loop()
   
   int LSY = 128 - ps2x.Analog(PSS_LY);
   int LSX = ps2x.Analog(PSS_LX) - 128;
+  int RSX = ps2x.Analog(PSS_RX);
 
   boolean Active = SeqHandler();  //Store the servo status and process any Active Sequences
   
@@ -117,6 +128,8 @@ void loop()
     Walk((LSY > 0)? 20:-20, 1000 - abs(LSY)/128.0*1000 + 250); 
   else if((LSX > Deadzone || LSX < -Deadzone) && !Active)
     Turn((LSX > 0)? 30:-30, 250);
+  else if(!Active)
+    Pan.write(RSX/255.0*180);
   else if(ps2x.ButtonPressed(PSB_GREEN) && !Active)
     Head_Thrust();
   else if(ps2x.ButtonPressed(PSB_L1) && !Active)
