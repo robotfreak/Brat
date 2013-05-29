@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Brat_Acc", "Brat_Acc.vcxproj", "{A6304394-C3EE-40F5-8C9B-7A7EED030E7D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Brat_Adv", "..\Brat_Adv\Brat_Adv.vcxproj", "{8E08D762-04FB-486F-9905-EA829C0EF773}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A6304394-C3EE-40F5-8C9B-7A7EED030E7D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A6304394-C3EE-40F5-8C9B-7A7EED030E7D}.Debug|Win32.Build.0 = Debug|Win32
+		{A6304394-C3EE-40F5-8C9B-7A7EED030E7D}.Release|Win32.ActiveCfg = Release|Win32
+		{A6304394-C3EE-40F5-8C9B-7A7EED030E7D}.Release|Win32.Build.0 = Release|Win32
+		{8E08D762-04FB-486F-9905-EA829C0EF773}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8E08D762-04FB-486F-9905-EA829C0EF773}.Debug|Win32.Build.0 = Debug|Win32
+		{8E08D762-04FB-486F-9905-EA829C0EF773}.Release|Win32.ActiveCfg = Release|Win32
+		{8E08D762-04FB-486F-9905-EA829C0EF773}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
