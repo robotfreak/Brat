@@ -1,4 +1,4 @@
-#include "WProgram.h"
+#include "Arduino.h"
 
 #define period 10 //time between each servo adjustment in Microseconds
 

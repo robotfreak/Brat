@@ -11,13 +11,13 @@
 #include <Servo.h>
 #include "Move_Data.h"
  
-#define RightHipPin 4
-#define RightKneePin 3
-#define RightAnklePin 2
-#define LeftHipPin 11
-#define LeftKneePin 12
-#define LeftAnklePin 13
-#define SensorServoPin 10
+#define RightHipPin 12
+#define RightKneePin 11
+#define RightAnklePin 10
+#define LeftHipPin 4
+#define LeftKneePin 3
+#define LeftAnklePin 2
+#define SensorServoPin 13
 
 
 

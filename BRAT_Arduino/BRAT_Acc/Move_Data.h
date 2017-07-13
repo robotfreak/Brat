@@ -2,8 +2,8 @@
 
 #define period 10 //time between each servo adjustment in Microseconds
 
-extern Servo ServoTable[6];
-extern int Offsets[6];
+extern Servo ServoTable[7];
+extern int Offsets[7];
 
 float RHP = 90;
 float RKP = 90;
